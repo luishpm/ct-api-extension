@@ -7,6 +7,6 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
     console.log("Probando");
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 200 })
+    return NextResponse.json({ success: true }, { status: 200 })
 
 }
