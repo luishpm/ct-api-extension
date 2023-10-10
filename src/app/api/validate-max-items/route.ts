@@ -3,7 +3,7 @@ import {NextRequest, NextResponse} from "next/server";
 export async function POST(request: NextRequest) {
     let cart = await request.json()
     console.log(cart)
-    let itemsTotal = cart.lineItems.reduce((acc:any, curr:any) => {
+    let itemsTotal = cart.resource.obj.lineItems.reduce((acc:any, curr:any) => {
         return acc + curr.quantity;
     }, 0);
 
