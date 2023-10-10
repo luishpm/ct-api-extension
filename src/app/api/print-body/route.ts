@@ -5,7 +5,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true }, { status: 200 })
 }
 
-export async function GET(request: NextRequest) {
+export async function GET() {
     console.log("Probando");
     return NextResponse.json({ success: true }, { status: 200 })
 
