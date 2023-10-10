@@ -19,6 +19,6 @@ export async function POST(request: NextRequest) {
                     message: 'You can not put more than 10 items into the cart.',
                 },
             ],
-        },{status: 200})
+        },{status: 400})
     }
 }
